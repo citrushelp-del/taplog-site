@@ -42,7 +42,7 @@
       <li>We do <strong>not</strong> sync baby logs to our own cloud servers.</li>
       <li>Optional encrypted local backups are controlled by you.</li>
       <li>The family list stores names and pair codes on this phone only. It does not copy baby logs to another phone.</li>
-      <li>The one-time unlock is confirmed with Google Play on Android and the App Store on iPhone. That store must be reachable for the check. Baby logs are not sent to the store or to us.</li>
+      <li>The one-time unlock is confirmed with Google Play on Android and the App Store on iPhone. If that store cannot be reached, a confirmation from the last 14 days still opens Taplog. Baby logs are not sent to the store or to us.</li>
     </ul>
 
     <h2>Information we store on your device</h2>
@@ -81,8 +81,9 @@
     <p>
       On Android the one-time unlock is purchased and confirmed through Google Play. On iPhone it is
       purchased and confirmed through the App Store. When you open Taplog, the app asks that store
-      whether this install is unlocked. The store must be reachable for that check. If it cannot be
-      reached, Taplog cannot confirm the unlock.
+      whether this install is unlocked. If the store says the unlock is not owned, Taplog locks.
+      If the store cannot be reached, a confirmation from the last 14 days still opens Taplog.
+      Without a confirmation in that window, Taplog stays locked.
     </p>
     <p>
       That check does not include your baby care logs. Payment details stay with Google or Apple
@@ -140,7 +141,7 @@
       <li>Bebek kayıtlarını kendi bulut sunucularımıza <strong>senkronize etmeyiz</strong>.</li>
       <li>İsteğe bağlı şifreli yerel yedekler sizin kontrolünüzdedir.</li>
       <li>Aile listesi ad ve eşleme kodunu yalnızca bu telefonda tutar. Bebek kayıtlarını başka telefona kopyalamaz.</li>
-      <li>Tek seferlik kilit Android’de Google Play, iPhone’da App Store ile doğrulanır. Bu kontrol için o mağazaya ulaşılmalıdır. Bebek kayıtları mağazaya veya bize gönderilmez.</li>
+      <li>Tek seferlik kilit Android’de Google Play, iPhone’da App Store ile doğrulanır. O mağaza ulaşılamazsa son 14 gündeki onay Taplog’u açık tutar. Bebek kayıtları mağazaya veya bize gönderilmez.</li>
     </ul>
 
     <h2>Cihazınızda saklanan bilgiler</h2>
@@ -179,8 +180,9 @@
     <p>
       Android’de tek seferlik kilit Google Play üzerinden alınır ve doğrulanır. iPhone’da aynı kilit
       App Store üzerinden alınır ve doğrulanır. Taplog’u açtığınızda uygulama, bu kurulumun açık
-      olup olmadığını o mağazaya sorar. Bu kontrol için mağazaya ulaşılmalıdır. Ulaşılamazsa
-      Taplog kilidi doğrulayamaz.
+      olup olmadığını o mağazaya sorar. Mağaza kilidin olmadığını söylerse Taplog kilitlenir.
+      Mağazaya ulaşılamazsa son 14 gündeki onay Taplog’u açık tutar. Bu pencerede bir onay yoksa
+      Taplog kilitli kalır.
     </p>
     <p>
       Bu kontrol bebek bakım kayıtlarınızı içermez. Ödeme bilgileri Google veya Apple’ın kendi
