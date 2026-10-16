@@ -93,7 +93,9 @@
       <strong>What the relay can see:</strong> a random family id, a random id for each phone, a
       hash of each phone's relay password and of invite codes, the time of requests, and the
       encrypted packets. When the founder unlocks Taplog, the relay checks the Google Play purchase
-      once and keeps only a hash of the purchase token. It does not receive your name, email, phone
+      once and keeps only a hash of the purchase token. Once a day it asks Google Play which purchases
+      were refunded; if the founder's purchase was, family sync stops and only that hash is kept so the
+      refunded purchase cannot unlock sync again. It does not receive your name, email, phone
       number, location or contacts.
     </p>
     <p>
@@ -236,8 +238,10 @@
       <strong>Sunucunun görebildikleri:</strong> rastgele bir aile kimliği, her telefon için
       rastgele bir kimlik, her telefonun sunucu parolasının ve davet kodlarının özeti, isteklerin
       zamanı ve şifreli paketler. Kurucu Taplog kilidini açtığında sunucu Google Play satın almasını
-      bir kez doğrular ve satın alma belirtecinin yalnızca özetini saklar. Adınız, e-postanız,
-      telefon numaranız, konumunuz veya kişileriniz sunucuya gelmez.
+      bir kez doğrular ve satın alma belirtecinin yalnızca özetini saklar. Günde bir kez Google Play'e
+      hangi satın almaların iade edildiğini sorar; kurucunun satın alması iade edildiyse aile senkronu
+      durur ve iade edilen satın alma senkronu yeniden açamasın diye yalnızca o özet saklanır. Adınız,
+      e-postanız, telefon numaranız, konumunuz veya kişileriniz sunucuya gelmez.
     </p>
     <p>
       <strong>Saklama:</strong> bir paket, ailedeki tüm telefonlar aldığı anda, en geç 30 gün
