@@ -27,7 +27,7 @@
 
   <section lang="en">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: 16 October 2026 (optional family sharing added)</p>
+    <p class="meta">Effective date: {DATE_EN} (family notifications added)</p>
 
     <p>
       This Privacy Policy describes how the Taplog mobile application (“Taplog”, “we”, “us”)
@@ -105,6 +105,19 @@
       activity for 90 days is deleted automatically. A phone removed by the founder stops receiving
       logs and deletes the other phones' logs from itself.
     </p>
+    <h2>Family notifications (Android)</h2>
+    <p>
+      In a family, Taplog can notify this phone when another phone adds a log. You can turn this off
+      on each phone under <em>Settings → Family</em>. To wake the phone, Taplog uses Firebase Cloud
+      Messaging, a Google service: the phone gives our relay a messaging token, and after another phone
+      sends logs the relay asks Google to deliver a message that only says "sync". The message carries
+      no logs, names or other content. The phone then syncs with the relay, decrypts the new logs and
+      writes the notification text itself. Google therefore sees the messaging token and when a
+      message is sent, never what was logged. The token is deleted from the relay when you turn
+      notifications off, leave or are removed from the family, or the family is deleted. Firebase
+      Analytics is not used.
+    </p>
+
     <h2>Camera</h2>
     <p>
       The camera is used only when you choose to scan an invite QR code. Taplog does not save
@@ -172,7 +185,7 @@
 
   <section class="lang" lang="tr">
     <h1>Gizlilik Politikası</h1>
-    <p class="meta">Yürürlük tarihi: 16 Ekim 2026 (isteğe bağlı aile paylaşımı eklendi)</p>
+    <p class="meta">Yürürlük tarihi: {DATE_TR} (aile bildirimleri eklendi)</p>
 
     <p>
       Bu Gizlilik Politikası, Taplog mobil uygulamasının (“Taplog”, “biz”) bilgileri nasıl ele aldığını açıklar.
@@ -249,6 +262,20 @@
       Üye aileden ayrılabilir. 90 gün hiç kullanılmayan aile kendiliğinden silinir. Kurucunun
       çıkardığı telefon artık kayıt almaz ve diğer telefonların kayıtlarını kendinden siler.
     </p>
+    <h2>Aile bildirimleri (Android)</h2>
+    <p>
+      Ailedeyken başka bir telefon kayıt eklediğinde Taplog bu telefona bildirim gönderebilir. Bunu her
+      telefonda <em>Ayarlar → Aile</em> altından kapatabilirsiniz. Telefonu uyandırmak için Taplog,
+      Google'ın bir hizmeti olan Firebase Cloud Messaging'i kullanır: telefon sunucumuza bir bildirim
+      belirteci verir; başka bir telefon kayıt gönderdikten sonra sunucu Google'dan yalnızca "senkron et"
+      diyen bir mesaj iletmesini ister. Mesajda kayıt, ad veya başka bir içerik yoktur. Telefon ardından
+      sunucuyla senkron olur, yeni kayıtların şifresini çözer ve bildirim metnini kendisi yazar.
+      Böylece Google yalnızca bildirim belirtecini ve mesajın ne zaman gönderildiğini görür, neyin
+      kaydedildiğini asla görmez. Bildirimleri kapattığınızda, aileden ayrıldığınızda veya
+      çıkarıldığınızda ya da aile silindiğinde belirteç sunucudan silinir. Firebase Analytics
+      kullanılmaz.
+    </p>
+
     <h2>Kamera</h2>
     <p>
       Kamera yalnızca davet QR kodunu taramayı seçtiğinizde kullanılır. Taplog kamera görüntüsünü
